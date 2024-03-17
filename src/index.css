@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.active{
-    color: #20B15A;
+.active {
+  color: #20b15a;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  nav {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .phonemenuitem {
+    background: black;
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+  }
 }

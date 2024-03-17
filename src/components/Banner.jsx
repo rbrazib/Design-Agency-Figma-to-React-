@@ -5,25 +5,32 @@ import Button from "./Button";
 
 const Banner = () => {
   return (
-    <div className="bg-[#D7F5DC] py-20">
+    <div className="bg-[#D7F5DC] py-5 md:py-20 lg:py-10 xl:py-10 2xl:py-10">
       <Container>
-        <div className="flex justify-between">
-          <div>
-            <h1 className="font-Pop font-bold text-5xl pt-10 leading-[70px] w-[500px]">
+        <div className="md:flex justify-between">
+          <div className="block md:hidden">
+            <picture>
+              <Image image="assets/banner.png" />
+            </picture>
+          </div>
+          <div className="text-center md:text-left">
+            <h1 className="font-Pop w-[350px] m-auto text-center md:text-left  font-bold text-2xl md:text-5xl pt-5 md:pt-10  md:leading-[70px] md:w-[500px]">
               Increase Your Customers Loyalty and Satisfaction
             </h1>
-            <p className="font-Pop font-medium text-sm w-[400px] pb-12 pt-2.5">
+            <p className="font-Pop font-medium w-[300px] m-auto md:m-0 text-center md:text-left text-sm md:w-[400px] lg:w-[400px] xl:w-[400px] 2xl:w-[400px] pb-12 pt-2.5">
               We help businesses like yours earn more customers, standout from
               competitors, make more money
             </p>
             <Button
-              className=" font-Pop font-medium text-base py-2.5 px-6 rounded border-2 hover:bg-[#20B15A] transition hover:text-white  hover:duration-75	 border-[#20B15A]"
+              className="font-Pop  font-medium text-base py-2.5 px-6 rounded border-2 hover:bg-[#20B15A] transition hover:text-white  hover:duration-75	 border-[#20B15A]"
               btnName="Get Started"
               href="/"
             />
           </div>
-          <div>
-            <Image image="assets/banner.png" />
+          <div className="hidden md:block">
+            <picture>
+              <Image image="assets/banner.png" />
+            </picture>
           </div>
         </div>
       </Container>
