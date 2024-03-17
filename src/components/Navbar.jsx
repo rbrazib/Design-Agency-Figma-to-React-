@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     window.addEventListener("resize", scrollwidth);
-  }, [false]);
+  }, [1]);
   return (
     <nav className="bg-[#D7F5DC] py-3">
       <Container>

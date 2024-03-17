@@ -18,4 +18,25 @@
     border-radius: 10px;
     color: white;
   }
+  .slick-dots {
+    background: rgb(128, 127, 127);
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 0 !important;
+  }
+  .slick-dots li {
+    background: rgb(197, 5, 5);
+    width: 30px !important;
+    height: 5px !important;
+    padding: 0 !important;
+  }
+  .slick-dots .slick-active {
+    background: #20b15a;
+  }
+  .slick-dots li button:before {
+    font-size: 0px;
+  }
 }

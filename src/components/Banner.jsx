@@ -17,7 +17,7 @@ const Banner = () => {
             <h1 className="font-Pop w-[350px] m-auto text-center md:text-left  font-bold text-2xl md:text-5xl pt-5 md:pt-10  md:leading-[70px] md:w-[500px]">
               Increase Your Customers Loyalty and Satisfaction
             </h1>
-            <p className="font-Pop font-medium w-[300px] m-auto md:m-0 text-center md:text-left text-sm md:w-[400px] lg:w-[400px] xl:w-[400px] 2xl:w-[400px] pb-12 pt-2.5">
+            <p className="font-Pop font-medium w-[300px] m-auto md:m-0 text-center md:text-left text-sm md:w-[400px] lg:w-[400px] xl:w-[400px] 2xl:w-[400px] pb-5 md:pb-12 pt-2.5">
               We help businesses like yours earn more customers, standout from
               competitors, make more money
             </p>
