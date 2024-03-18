@@ -16,24 +16,25 @@ const Navbar = () => {
         setShowBar(true);
       }
     }
+    scrollwidth();
 
     window.addEventListener("resize", scrollwidth);
-  }, [1]);
+  }, []);
   return (
     <nav className="bg-[#D7F5DC] py-3">
       <Container>
         <div className=" md:flex lg:flex xl:flex 2xl:flex align-middle">
-          <div className="w-1/4  lg:w-1/4 md:w-1/4 xl:w-1/4 2xl:w-1/4">
+          <div className="w-1/2 lg:w-1/4 md:w-1/4 xl:w-1/4 2xl:w-1/4">
             <NavLink to="#">
               <Image image="assets/DesignAGENCY.png" />
             </NavLink>
           </div>
           <FaBars
             onClick={() => setShowBar(!showBar)}
-            className="block sm:hidden lg:hidden ml-auto -mt-5"
+            className="block sm:hidden lg:hidden text-2xl ml-auto -mt-7"
           />
           {showBar && (
-            <div className="phonemenuitem w-3/4 md:flex lg:flex 2xl:flex xl:md:flex justify-end absolute top-5 left-[50%] translate-x-[-50%]">
+            <div className="phonemenuitem w-3/4 md:flex lg:flex 2xl:flex xl:md:flex justify-end absolute top-8 left-[50%] translate-x-[-50%]">
               <List className="md:flex lg:flex xl:flex 2xl:flex gap-x-10 py-3 items-center">
                 <ListItem
                   className="font-Pop font-medium text-base text-white md:text-[#000000] "
